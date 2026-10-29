@@ -22,10 +22,7 @@ This project implements:
 ## 🏗️ Architecture & Directory Structure
 ```text
 predictive-maintenance-intelligence/
-├── app.py                         # Root FastAPI application entrypoint (Local & Vercel Backend)
-├── api/
-│   └── index.py                   # Vercel Serverless Function entrypoint (imports app)
-├── vercel.json                    # Vercel serverless Python rewrite configuration
+├── app.py                         # Root FastAPI application entrypoint (Auto-detected by Vercel)
 ├── .vercelignore                  # Vercel bundle optimization (excludes frontend, tests, raw data)
 ├── .python-version                # Explicit Python 3.12 runtime instruction for Vercel
 ├── .env.example                   # Backend environment configuration template (ALLOWED_ORIGINS)
@@ -156,7 +153,7 @@ git push -u origin main
    * **Project Name:** `predictive-maintenance-backend` (or your choice)
    * **Framework Preset:** `Other`
    * **Root Directory:** `./` (Leave as default root)
-   * **Build & Development Settings:** Leave all defaults empty (Vercel automatically installs `requirements.txt` and uses `api/index.py` via `vercel.json`).
+   * **Build & Development Settings:** Leave all defaults empty (Vercel automatically detects root `app.py` and installs `requirements.txt`).
 4. **Environment Variables:**
    * `ALLOWED_ORIGINS`: Set to `*` initially, or update to your frontend Vercel URL once Project 2 is deployed.
 5. Click **Deploy**.

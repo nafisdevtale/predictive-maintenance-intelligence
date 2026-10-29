@@ -111,13 +111,13 @@ def test_simulator_initialize_and_step():
     assert step_data["metadata"]["is_simulated"] is True
 
 
-def test_vercel_entrypoint_compatibility():
-    """Ensures api/index.py exposes the exact same FastAPI app for Vercel serverless."""
-    from api.index import app as vercel_app
+def test_fastapi_root_entrypoint_compatibility():
+    """Ensures root app.py exposes the exact FastAPI app auto-detected by Vercel."""
+    from app import app as root_app
     from fastapi.testclient import TestClient
 
-    v_client = TestClient(vercel_app)
-    res = v_client.get("/health")
+    test_client = TestClient(root_app)
+    res = test_client.get("/health")
     assert res.status_code == 200
     assert res.json()["status"] == "healthy"
 
