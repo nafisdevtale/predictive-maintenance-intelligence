@@ -1,0 +1,49 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw dataset downloads (keep raw CSV out of Git; API and models use precomputed metrics & serializations)
+data/*.csv
+data/*.zip
+!data/README.md
+
+# Local environment files (Never commit secrets)
+.env
+.env.local
+.env.*.local
+!.env.example
+!frontend/.env.example
+
+# Vercel deployment cache
+.vercel/
+
+# Frontend build outputs and dependencies
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.production.local
+frontend/.env.development.local
+
+# OS and Editor metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Deployable artifacts (Models and analytical reports are required for production Vercel deployment)
+# models/*.joblib and outputs/*.json are explicitly included for Vercel backend deployment

@@ -1,0 +1,17 @@
+# Vercel Deployment Bundle Ignore Rules (Backend Project)
+# Excludes the frontend, tests, raw datasets, figures, and caches from serverless bundle
+
+frontend/
+.venv/
+venv/
+tests/
+data/*.csv
+data/*.zip
+outputs/figures/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.git/
+.github/
+.DS_Store

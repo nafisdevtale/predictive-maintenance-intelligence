@@ -1,0 +1,182 @@
+{
+  "sample_size": 10000,
+  "alpha_threshold": 0.05,
+  "multiple_testing_correction": "Benjamini-Hochberg (FDR)",
+  "numeric_tests": [
+    {
+      "feature": "Air temperature [K]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 300.0,
+      "iqr_non_failure": 3.2,
+      "median_failure": 301.6,
+      "iqr_failure": 3.4,
+      "median_difference": 1.6,
+      "u_statistic": 2072260.0,
+      "raw_p_value": 8.656108133039116e-17,
+      "rank_biserial_r": 0.2655,
+      "warning": null,
+      "fdr_adjusted_p_value": 1.009879282187897e-16,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Process temperature [K]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 310.0,
+      "iqr_non_failure": 2.3,
+      "median_failure": 310.4,
+      "iqr_failure": 1.7,
+      "median_difference": 0.4,
+      "u_statistic": 1846182.5,
+      "raw_p_value": 6.486083127989519e-05,
+      "rank_biserial_r": 0.1274,
+      "warning": null,
+      "fdr_adjusted_p_value": 6.486083127989519e-05,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Rotational speed [rpm]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 1507.0,
+      "iqr_non_failure": 186.0,
+      "median_failure": 1365.0,
+      "iqr_failure": 95.0,
+      "median_difference": -142.0,
+      "u_statistic": 764120.0,
+      "raw_p_value": 9.706907631568239e-63,
+      "rank_biserial_r": -0.5334,
+      "warning": null,
+      "fdr_adjusted_p_value": 3.3974176710488837e-62,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Torque [Nm]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 39.9,
+      "iqr_non_failure": 13.2,
+      "median_failure": 53.7,
+      "iqr_failure": 15.25,
+      "median_difference": 13.8,
+      "u_statistic": 2522586.0,
+      "raw_p_value": 2.2622323312325325e-64,
+      "rank_biserial_r": 0.5405,
+      "warning": null,
+      "fdr_adjusted_p_value": 1.5835626318627727e-63,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Tool wear [min]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 107.0,
+      "iqr_non_failure": 108.0,
+      "median_failure": 165.0,
+      "iqr_failure": 123.0,
+      "median_difference": 58.0,
+      "u_statistic": 2168468.0,
+      "raw_p_value": 2.9164608736257615e-24,
+      "rank_biserial_r": 0.3242,
+      "warning": null,
+      "fdr_adjusted_p_value": 4.083045223076066e-24,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Temp difference [K]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 9.8,
+      "iqr_non_failure": 1.7,
+      "median_failure": 9.3,
+      "iqr_failure": 2.1,
+      "median_difference": -0.5,
+      "u_statistic": 1105789.0,
+      "raw_p_value": 2.403331732445125e-24,
+      "rank_biserial_r": -0.3247,
+      "warning": null,
+      "fdr_adjusted_p_value": 4.083045223076066e-24,
+      "is_significant_fdr": true
+    },
+    {
+      "feature": "Power [W]",
+      "n_non_failure": 9661,
+      "n_failure": 339,
+      "median_non_failure": 6243.0462,
+      "iqr_non_failure": 1402.7421,
+      "median_failure": 7611.4297,
+      "iqr_failure": 1879.7981,
+      "median_difference": 1368.3835,
+      "u_statistic": 2442069.5,
+      "raw_p_value": 1.6554014345286612e-53,
+      "rank_biserial_r": 0.4913,
+      "warning": null,
+      "fdr_adjusted_p_value": 3.862603347233543e-53,
+      "is_significant_fdr": true
+    }
+  ],
+  "categorical_test": {
+    "status": "VALID",
+    "contingency_table": {
+      "H": {
+        "0": 982,
+        "1": 21
+      },
+      "L": {
+        "0": 5765,
+        "1": 235
+      },
+      "M": {
+        "0": 2914,
+        "1": 83
+      }
+    },
+    "breakdown_by_type": {
+      "H": {
+        "total_count": 1003,
+        "failure_count": 21,
+        "failure_rate_pct": 2.094
+      },
+      "L": {
+        "total_count": 6000,
+        "failure_count": 235,
+        "failure_rate_pct": 3.917
+      },
+      "M": {
+        "total_count": 2997,
+        "failure_count": 83,
+        "failure_rate_pct": 2.769
+      }
+    },
+    "chi2_statistic": 13.7517,
+    "degrees_of_freedom": 2,
+    "p_value": 0.0010324110359454081,
+    "is_significant": true,
+    "cramers_v": 0.0371,
+    "assumptions": {
+      "min_expected_frequency": 34.002,
+      "pct_expected_under_5": 0.0,
+      "assumptions_met": true,
+      "warning": null
+    }
+  },
+  "interpretations": {
+    "dataset_nature": "The UCI AI4I 2020 dataset is a synthetic simulation benchmark. All reported statistical associations reflect underlying mathematical generator functions, not physical empirical field telemetry.",
+    "causality_caveat": "Statistical significance and non-zero rank-biserial correlations indicate distributional differences across classes, NOT direct causal mechanisms. Confounding and inter-sensor correlations must be evaluated through multivariate modeling.",
+    "fdr_correction_summary": "Of the 7 tested numeric features, 7 maintained statistical significance after Benjamini-Hochberg FDR correction at alpha=0.05.",
+    "strongest_numeric_association": {
+      "feature": "Torque [Nm]",
+      "rank_biserial_r": 0.5405,
+      "median_failure": 53.7,
+      "median_non_failure": 39.9
+    },
+    "machine_type_association": {
+      "chi2_stat": 13.7517,
+      "p_value": 0.0010324110359454081,
+      "cramers_v": 0.0371,
+      "is_significant": true,
+      "interpretation": "Machine Type exhibits a Cramer's V of 0.0371, indicating a statistically significant but weak association with overall machine failure."
+    }
+  }
+}
