@@ -1,0 +1,2 @@
+# Frontend deployment: override the repository-root backend ignore rules.
+# Do not exclude the frontend source files.
